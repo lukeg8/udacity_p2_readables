@@ -5,7 +5,7 @@ import {
     VOTE_POST_DOWN,
     EDIT_POST,
     DELETE_POST
-} from "../Actions/Posts";
+} from "../Actions/types";
 
 export default function Posts(state = {}, action) {
     switch (action.type) {

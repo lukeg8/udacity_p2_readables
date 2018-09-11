@@ -6,13 +6,15 @@ import {
     voteCommentDown
 } from "../utils/API";
 
-export const RECEIVE_COMMENTS = "RECEIVE_COMMENTS";
-export const ADD_COMMENT_TO_POST = "ADD_COMMENT_TO_POST";
-export const VOTE_COMMENT_DOWN = "VOTE_COMMENT_DOWN";
-export const VOTE_COMMENT_UP = "VOTE_COMMENT_UP";
-export const EDIT_COMMENT = "EDIT_COMMENT";
-export const DELETE_COMMENT = "DELETE_COMMENT";
-export const DELETE_COMMENT_PARENT_OF_ONE = "DELETE_COMMENT_PARENT_OF_ONE";
+import {
+    RECEIVE_COMMENTS,
+    ADD_COMMENT_TO_POST,
+    VOTE_COMMENT_DOWN,
+    VOTE_COMMENT_UP,
+    EDIT_COMMENT,
+    DELETE_COMMENT,
+    DELETE_COMMENT_PARENT_OF_ONE
+} from "./types";
 
 export function receiveComments(comments) {
     return {

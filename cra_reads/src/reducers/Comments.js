@@ -6,7 +6,7 @@ import {
     EDIT_COMMENT,
     DELETE_COMMENT,
     DELETE_COMMENT_PARENT_OF_ONE
-} from "../Actions/Comments";
+} from "../Actions/types";
 
 export default function Comments(state = {}, action) {
     switch (action.type) {

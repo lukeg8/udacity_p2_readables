@@ -7,12 +7,14 @@ import {
 } from "../utils/API";
 import { deleteCommentParent } from "./Comments";
 
-export const RECEIVE_POSTS = "RECEIVE_POSTS";
-export const SET_POST = "SET_POST";
-export const VOTE_POST_UP = "VOTE_POST_UP";
-export const VOTE_POST_DOWN = "VOTE_POST_DOWN";
-export const EDIT_POST = "EDIT_POST";
-export const DELETE_POST = "DELETE_POST";
+import {
+    RECEIVE_POSTS,
+    SET_POST,
+    VOTE_POST_UP,
+    VOTE_POST_DOWN,
+    EDIT_POST,
+    DELETE_POST
+} from "./types";
 
 export function receivePosts(posts) {
     return {

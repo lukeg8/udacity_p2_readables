@@ -1,4 +1,4 @@
-export const SET_CATEGORIES = "SET_CATEGORIES";
+import { SET_CATEGORIES } from "./types";
 
 export function setCategories(categories) {
     return {

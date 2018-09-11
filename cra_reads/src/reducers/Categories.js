@@ -1,4 +1,4 @@
-import { SET_CATEGORIES } from "../Actions/Categories";
+import { SET_CATEGORIES } from "../Actions/types";
 
 export default function Categories(state = [], action) {
     switch (action.type) {
