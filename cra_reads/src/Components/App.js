@@ -4,12 +4,11 @@ import Category from "./Category";
 import AllCategories from "./AllCategories";
 import Posts from "./Posts";
 import { connect } from "react-redux";
-import { bindActionCreators } from "redux";
 import { handleInitialData } from "../Actions/shared";
 
 class App extends Component {
     componentDidMount() {
-        this.props.handleInitialData()
+        this.props.handleInitialData();
     }
     render() {
         return (
@@ -31,13 +30,9 @@ class App extends Component {
     }
 }
 
-function mapDispatchToProps(dispatch) {
-    return bindActionCreators({ handleInitialData }, dispatch);
-}
-
 export default withRouter(
     connect(
         null,
-        mapDispatchToProps
+        { handleInitialData }
     )(App)
 );
