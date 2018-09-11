@@ -21,3 +21,5 @@ cd cra_reads/
 npm install
 npm start
 ```
+
+added fix from recommendation
